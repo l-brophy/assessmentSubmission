@@ -16,7 +16,7 @@ WHERE Email IS NOT NULL
 ```csharp
 public static string Likes(List<string> likes)
 {
-	int i = likes.Count;
+    int i = likes.Count;
 
 	if (i == 0)
 		// early returns for flat and flowy logic
