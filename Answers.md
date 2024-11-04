@@ -25,10 +25,10 @@ public static string Likes(List<string> likes)
     if (i == 1)
         return $"{names[0]} likes this.";
 
-	if (i == 2)
-		return $"{names[0]} and {names[1]} like this.";
+    if (i == 2)
+        return $"{names[0]} and {names[1]} like this.";
 
-	if (i == 3)
+    if (i == 3)
         return $"{names[0]}, {names[1]} and {names[2]} like this.";
 
     return $"{names[0]}, {names[1]} and {i - 2} others like this.";
@@ -54,7 +54,7 @@ public class Factory
 
     public Robot BuildRobot(Enum RobotType)
     {
-		var parts = GetRobotPartsFor(RobotType);
+        var parts = GetRobotPartsFor(RobotType);
         // decouple BuildRobot methods from RobotType
         return _robotService.BuildRobot(RobotType, parts);
     }
@@ -96,8 +96,8 @@ Or, abstracted into a function for better readability and modularity:
 
 ```javascript
 function pinkify(id) {
-	let elem = document.getElementById(id);
-	elem.style.backgroundColor = 'pink'; 
+    let elem = document.getElementById(id);
+    elem.style.backgroundColor = 'pink'; 
 }
 ```
 
