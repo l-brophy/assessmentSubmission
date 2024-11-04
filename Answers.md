@@ -18,12 +18,12 @@ public static string Likes(List<string> likes)
 {
     int i = likes.Count;
 
-	if (i == 0)
-		// early returns for flat and flowy logic
-		return "No one likes this.";
+    if (i == 0)
+        // early returns for flat and flowy logic
+        return "No one likes this.";
 			
-	if (i == 1)
-		return $"{names[0]} likes this.";
+    if (i == 1)
+        return $"{names[0]} likes this.";
 
 	if (i == 2)
 		return $"{names[0]} and {names[1]} like this.";
@@ -55,7 +55,7 @@ public class Factory
     public Robot BuildRobot(Enum RobotType)
     {
 		var parts = GetRobotPartsFor(RobotType);
-		// decouple BuildRobot methods from RobotType
+        // decouple BuildRobot methods from RobotType
         return _robotService.BuildRobot(RobotType, parts);
     }
 
