@@ -29,9 +29,9 @@ public static string Likes(List<string> likes)
 		return $"{names[0]} and {names[1]} like this.";
 
 	if (i == 3)
-		return $"{names[0]}, {names[1]} and {names[2]} like this.";
+        return $"{names[0]}, {names[1]} and {names[2]} like this.";
 
-	return $"{names[0]}, {names[1]} and {i - 2} others like this.";
+    return $"{names[0]}, {names[1]} and {i - 2} others like this.";
 }
 ```
 
